@@ -1,10 +1,12 @@
-# Solana AgentKit Documentation
+# Solana AI Agent Documentation
 
-Welcome to the Solana AgentKit documentation! This Python package offers a robust toolkit for building AI-powered agents capable of interacting seamlessly with the Solana blockchain.
+Welcome to the **Solana AI Agent** documentation! This Python package provides a powerful toolkit for building AI-powered agents capable of interacting with the Solana blockchain.
 
 ## Quick Start
 
 ### Installation
+
+To install the package, use the following commands:
 
 ```bash
 # Basic installation
@@ -19,13 +21,15 @@ pip install solana-agentkit[docs]
 
 ### Basic Usage
 
+Here’s a simple example to get started with the **SolanaAgent** class:
+
 ```python
 from solana_agentkit import SolanaAgent
 
-# Initialize the agent
+# Initialize the agent with your private key and RPC URL
 agent = SolanaAgent(
     private_key="your_private_key",
-    rpc_url="https://api.mainnet-beta.solana.com"
+    rpc_url="your solana rpc url"
 )
 
 # Check balance
@@ -52,10 +56,10 @@ print(f"Transfer successful: {result.signature}")
 
 ### AI Integration
 
-- **LangChain Support**: Integrate advanced AI capabilities.
-- **OpenAI Integration**: Use AI for image generation and natural language processing.
-- **Custom Behaviors**: Define agent-specific personalities and tasks.
-- **Command Understanding**: Enable natural language commands for blockchain operations.
+- **LangChain Support**: Integrate advanced AI capabilities for handling complex tasks.
+- **OpenAI Integration**: Leverage AI for image generation, text processing, and more.
+- **Custom Behaviors**: Create agent-specific personalities and behaviors.
+- **Command Understanding**: Enable natural language understanding for blockchain operations.
 
 ### Blockchain Features
 
@@ -67,22 +71,26 @@ print(f"Transfer successful: {result.signature}")
 
 ### Setting Up the Development Environment
 
+Clone the repository and set up your environment:
+
 ```bash
 # Clone the repository
-git clone https://github.com/arhansuba/solana-agentkit
-cd solana-agentkit
+git clone https://github.com/fcbtc1116/solana-ai-agent
+cd solana-ai-agent
 
 # Create a virtual environment
 python -m venv venv
-source venv/bin/activate  # Unix
+source venv/bin/activate  # For Unix-based systems
 # or
-.\venv\Scripts\activate  # Windows
+.\venv\Scripts\activate  # For Windows systems
 
 # Install development dependencies
 pip install -r requirements.txt
 ```
 
 ### Running Tests
+
+Run the tests to ensure the system is working properly:
 
 ```bash
 # Run all tests
@@ -94,11 +102,7 @@ pytest --cov=solana_agentkit tests/
 
 ### Code Formatting and Linting
 
-We enforce consistent code quality with:
-
-- **Black** for code formatting.
-- **isort** for import sorting.
-- **Pre-commit Hooks**: Ensure all code changes meet the project's quality standards.
+We enforce consistent code quality with tools like **Black**, **isort**, and **Pre-commit hooks**:
 
 ```bash
 # Format code
@@ -110,61 +114,49 @@ isort src/ tests/
 
 ## Project Structure
 
+Here’s an overview of the project structure:
+
 ```
 solana-agentkit/
 ├── docs/               # Documentation
-├── src/               # Source code
+├── src/                # Source code
 │   └── solana_agentkit/
-│       ├── agent/     # Agent implementations
-│       ├── tools/     # Blockchain tools
-│       └── utils/     # Utility functions
-├── tests/             # Test suite
-└── examples/          # Usage examples
+│       ├── agent/      # Agent implementations
+│       ├── tools/      # Blockchain utilities and tools
+│       └── utils/      # Utility functions
+├── tests/              # Test suite
+└── examples/           # Usage examples
 ```
 
 ## Planned Features
 
 ### Protocol Integrations
 
-- **DEX Integration**: Jupiter and Orca for seamless trading.
-- **Lending**: Solend integration for borrowing and lending.
-- **Staking**: Marinade integration for liquid staking.
+- **DEX Integration**: Integrating with **Jupiter** and **Orca** for seamless trading.
+- **Lending**: Integration with **Solend** for borrowing and lending.
+- **Staking**: Integration with **Marinade** for liquid staking.
 
 ### Analytics and Monitoring
 
-- **On-Chain Metrics**: Price feeds, market volume, and portfolio tracking.
+- **On-Chain Metrics**: Provide price feeds, market volume, and portfolio tracking.
 - **Alerts**: Event-based monitoring and notifications.
 
 ### Security Enhancements
 
-- Input validation framework.
-- Transaction simulation and risk assessment.
-- Advanced rate limiting and error handling.
+- **Input Validation**: Ensures all inputs are validated before processing.
+- **Transaction Simulation**: Simulate transactions to assess risks before broadcasting.
+- **Advanced Rate Limiting**: Handle rate limits for transactions effectively.
 
 ### Advanced Tools
 
-- Yield farming and liquidity mining utilities.
-- Governance tools for proposal creation and voting.
-- Automation modules for trading and portfolio rebalancing.
+- **Yield Farming**: Utilities to support yield farming and liquidity mining.
+- **Governance**: Tools for creating proposals and voting.
+- **Automation**: Automate trading and portfolio rebalancing tasks.
 
-## Contributing
+## Contact
 
-We welcome contributions from the community! To get started:
+If you have any questions or need assistance, feel free to reach out to the repository owner.
 
-1. Fork the repository.
-2. Create your feature branch:
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m 'Add amazing feature'
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-5. Open a Pull Request for review.
+---
 
-## If you have any questions, contact to me.
-Telegram <a href="https://t.me/Immutal0" target="_blank">@Immutal0</a>`
+This updated README is clear, concise, and provides users with all the essential information to get started with your **Solana AI AgentKit**. It also includes helpful sections like **installation**, **basic usage**, and **future planned features** to guide developers.
