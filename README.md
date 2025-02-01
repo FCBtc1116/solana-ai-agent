@@ -156,7 +156,3 @@ solana-agentkit/
 ## Contact
 
 If you have any questions or need assistance, feel free to reach out to the repository owner.
-
----
-
-This updated README is clear, concise, and provides users with all the essential information to get started with your **Solana AI AgentKit**. It also includes helpful sections like **installation**, **basic usage**, and **future planned features** to guide developers.
